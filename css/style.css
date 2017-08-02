@@ -6,38 +6,38 @@
     */
 
     body {
-     line-height: 1.4;
-     font-family: 'Roboto', sans-serif;
-     color: #67696c;
-     font-size: 16px;
-     font-weight: 300;
-     letter-spacing: 0.5px;
-     overflow-x: hidden;
- }
- ol, ul {
-     list-style: none;
- }
- blockquote, q {
-     quotes: none;
- }
- blockquote:before, blockquote:after,
- q:before, q:after {
-     content: '';
-     content: none;
- }
+       line-height: 1.4;
+       font-family: 'Roboto', sans-serif;
+       color: #67696c;
+       font-size: 16px;
+       font-weight: 300;
+       letter-spacing: 0.5px;
+       overflow-x: hidden;
+   }
+   ol, ul {
+       list-style: none;
+   }
+   blockquote, q {
+       quotes: none;
+   }
+   blockquote:before, blockquote:after,
+   q:before, q:after {
+       content: '';
+       content: none;
+   }
 
- table {
-     border-collapse: collapse;
-     border-spacing: 0;
- }
- h1, h2, h3, h4, h5, h6{
+   table {
+       border-collapse: collapse;
+       border-spacing: 0;
+   }
+   h1, h2, h3, h4, h5, h6{
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
 }
 
 .section-padding
 {
-  padding: 80px 0px;
+  padding: 60px 0px;
 /* padding-top: 80px;
  padding-bottom: 30px;
  padding-left: 0px;
@@ -160,12 +160,12 @@
 }
 
 .items-social li a:hover{
- background-position: bottom center; 
- background-repeat: no-repeat; 
- -webkit-transition: all 0.2s ease-in-out; 
- -moz-transition: all 0.2s ease-in-out; 
- -o-transition: all 0.2s ease-in-out; 
- transition: all 0.2s ease-in-out;
+   background-position: bottom center; 
+   background-repeat: no-repeat; 
+   -webkit-transition: all 0.2s ease-in-out; 
+   -moz-transition: all 0.2s ease-in-out; 
+   -o-transition: all 0.2s ease-in-out; 
+   transition: all 0.2s ease-in-out;
 }
 
 .hidden_info{
@@ -213,10 +213,11 @@ HEADER
 }
 
 .header-top {
-    position: relative;
+    position: static;
     background: #0D4A7B;
-    line-height: 20px;
+    line-height: 25px;
     z-index: 9;
+    top: 0;
 }
 
 .header-top-right {
@@ -256,6 +257,10 @@ HEADER
     box-shadow: 0px 5px 11px 0px rgba(50, 50, 50, 0.08); 
 }
 
+.navbar-default .dropdown-menu {
+    margin-top: 10px!important;
+}
+
 .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover
 {
     color: #002F2F;
@@ -266,6 +271,11 @@ HEADER
     /*background-color: #ffffff;*/
     -webkit-box-shadow: 0px 5px 11px 0px rgba(50, 50, 50, 0.08);
     box-shadow: 0px 5px 11px 0px rgba(50, 50, 50, 0.08); 
+    top: 0px;
+}
+
+.top-nav-collapse .dropdown-menu {
+    margin-top: 0px!important;
 }
 
 .logo-dec
@@ -282,6 +292,7 @@ HEADER
 {
     color: #fff;
 }
+
 .navbar-brand {
     padding: 0px;
     font-size: 24px;
@@ -309,13 +320,14 @@ HEADER
 }
 
 .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
-    background-color: rgba(0,0,0,0.1);
+    /*background-color: rgba(0,0,0,0.1);*/
     -webkit-transition: background-color .3s ease;
     -moz-transition: background-color .3s ease;
     -o-transition: background-color .3s ease;
     -ms-transition: background-color .3s ease;
     transition: background-color .3s ease;
     color: #f96e0c;
+    /*border-top:1px solid #f96e0c;*/
 }
 
 .banner-info
@@ -346,7 +358,7 @@ h2.bnr-sub-title
 }
 .btn-download, .btn-more, .btn-download:hover, .btn-download:focus, .btn-more:focus
 {
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     color: #fff;
     border: 0;
     font-size: 14px;
@@ -379,10 +391,10 @@ h2.bnr-sub-title
 }
 
 .overlay-detail a i{
-   text-align: center;
-   position: absolute;
-   bottom: 25px;
-   font-size: 38px;
+ text-align: center;
+ position: absolute;
+ bottom: 25px;
+ font-size: 38px;
 
 }
 
@@ -420,9 +432,11 @@ features
     border: 0;
     border-top: 0px;
     height: 2px;
-    width: 40px;
+    width: 90px;
     background-color: #f96e0c;
+    
 }
+
 .wrap-item h3 {
     font-size: 24px;
     line-height: 25px;
@@ -571,7 +585,7 @@ ul.service-list li i
     left:0;
     width:100%;
     height:100%;
-    padding: 59px 30px;
+    padding: 15px 20px;
     background-color: #f96e0c;
     backface-visibility:hidden;
     -webkit-transform:rotateY(-180deg);
@@ -598,6 +612,25 @@ ul.service-list li i
     -moz-transform:rotateY(0);
     transform:rotateY(0)
 }
+
+/***********************************
+************************************
+TECNOLOGIA
+************************************
+***********************************/
+#tecnologia
+{
+    background: url('../img/bg.jpg') no-repeat;
+    background-size: cover;
+    min-height: 120px;
+}
+
+.bg-tecnologia{
+    background-color: RGBA(73, 84, 105, 0.61);
+    min-height: 390px;
+    color: #fff;
+}
+
 /***********************************
 ************************************
 TESTIMONIAL
@@ -609,6 +642,7 @@ TESTIMONIAL
     background-size: cover;
     min-height: 390px;
 }
+
 .bg-testicolor{
     background-color: RGBA(73, 84, 105, 0.61);
     min-height: 390px;
@@ -853,6 +887,10 @@ contact
     text-align: center;
 }
 
+.scrollToTop:hover{
+    background: #e26710;
+}
+
 .white-bg
 {
     background-color: #fff;
@@ -861,13 +899,15 @@ contact
 #footer
 {
     padding: 20px 0px;
-    background-color: #0D4A7B;
-    border-top: 1px solid #37A2D4;
+    background-color: #0f3858;
+    border-top: 2px solid #37A2D4;
 }
 
 #footer a{
-    color: #f96e0c;
+    color: #c1baba;
+    font-size: 14px;
     font-weight: 400;
+    text-decoration: none;
 }
 
 /***********************************
@@ -986,20 +1026,20 @@ Responsive media queries
 
 .transition-obj
 {
-   width: 100%;
-   opacity: 0.8;
-   -webkit-transition: all 0.5s linear;
-   -moz-transition: all 0.5s linear;
-   -ms-transition: all 0.5s linear;
-   -o-transition: all 0.5s linear;
-   transition: all 0.5s linear;
+ width: 100%;
+ opacity: 0.8;
+ -webkit-transition: all 0.5s linear;
+ -moz-transition: all 0.5s linear;
+ -ms-transition: all 0.5s linear;
+ -o-transition: all 0.5s linear;
+ transition: all 0.5s linear;
 }
 
 .transition-obj:hover {
-   opacity: 1;
-   -webkit-transform: scale(1.05);
-   -moz-transform: scale(1.05);
-   -ms-transform: scale(1.05);
-   -o-transform: scale(1.05);
-   transform: scale(1.05);
+ opacity: 1;
+ -webkit-transform: scale(1.05);
+ -moz-transform: scale(1.05);
+ -ms-transform: scale(1.05);
+ -o-transform: scale(1.05);
+ transform: scale(1.05);
 }
