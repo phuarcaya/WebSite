@@ -204,7 +204,8 @@ HEADER
 }
 .bg-color
 {
-    background-color: rgba(0, 0, 0, 0.5);
+    /*background-color: rgba(0, 0, 0, 0.5);*/
+        background-color: rgba(13, 74, 123, 0.45);
     min-height: 650px;
 }
 #main-header
@@ -214,7 +215,8 @@ HEADER
 
 .header-top {
     position: static;
-    background: #0D4A7B;
+    /*background: #0D4A7B;*/
+    background: #0a3b63;
     line-height: 25px;
     z-index: 9;
     top: 0;
@@ -232,7 +234,7 @@ HEADER
 .header-top-ul li{
     display: inline-block; 
     list-style: none; 
-    padding-left: 5px;
+    padding-left: 10px;
 }
 
 .header-top-ul li a{
