@@ -7,8 +7,8 @@
 
     body {
        line-height: 1.4;
-       font-family: 'Roboto', sans-serif;
-       color: #67696c;
+       font-family: Arial, Helvetica, sans-serif;
+       /*color: #67696c;*/
        font-size: 16px;
        font-weight: 300;
        letter-spacing: 0.5px;
@@ -77,7 +77,7 @@
     display: block; 
     margin-top: 15px; 
     margin-bottom: 15px; 
-    text-align: center;
+   /* text-align: center;*/
 }
 
 .manager-visible{
@@ -253,7 +253,7 @@ HEADER
     background-color: #FFFFFF;
     /*background-color: rgba(0, 0, 0, 0.5);*/
     border:0px;
-    padding: 10px 0; 
+    padding: 10px 0;
     transition: all 0.3s;
     -webkit-box-shadow: 0px 5px 11px 0px rgba(50, 50, 50, 0.08);
     box-shadow: 0px 5px 11px 0px rgba(50, 50, 50, 0.08); 
@@ -280,27 +280,24 @@ HEADER
     margin-top: 0px!important;
 }
 
-.logo-dec
-{
-    color: #f96e0c;
-}
 .navbar-default .navbar-brand {
 
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Times New Roman', sans-serif;
     font-weight: 700;
 }
 
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus
 {
-    color: #fff;
+  /*  color: #fff;*/
 }
 
 .navbar-brand {
     padding: 0px;
     font-size: 24px;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     padding: 15px 0px;
-    margin-top: 6px;
+    /*margin-top: 6px;*/
+    color: #003B4D!important;
 }
 .navbar-default .navbar-nav > li > a
 {
@@ -875,8 +872,8 @@ contact
     position: fixed;
     border-radius: 50%;
     color: #FFFFFF;
-    background: #F96E0C;
-    border: 1px solid #D87835;
+    background: #00758F;
+    border: 1px solid #0d98b7;
     bottom: 35px;
     right: 25px;
     width: 50px;
@@ -890,7 +887,7 @@ contact
 }
 
 .scrollToTop:hover{
-    background: #e26710;
+    background: #003B4D;
 }
 
 .white-bg
@@ -901,7 +898,7 @@ contact
 #footer
 {
     padding: 20px 0px;
-    background-color: #0f3858;
+    background-color: #003B4D;
     border-top: 2px solid #37A2D4;
 }
 
@@ -910,6 +907,10 @@ contact
     font-size: 14px;
     font-weight: 400;
     text-decoration: none;
+}
+
+#footer a:hover{
+    color: #ffffff;
 }
 
 /***********************************
@@ -1044,4 +1045,27 @@ Responsive media queries
  -ms-transform: scale(1.05);
  -o-transform: scale(1.05);
  transform: scale(1.05);
+}
+
+.logo{
+     background: url('../img/logo.png') no-repeat;
+     width: 165px;
+}
+
+.logo-dec
+{
+    text-align: right;
+    color: #f96e0c;
+    font-size: 14px;
+}
+
+.line-group {
+    min-height: 110px;
+    position: relative;
+    z-index: 10;
+    overflow: visible;
+    transition: all 0.5s ease;
+}
+.text-white{
+    color: #ffffff;
 }
