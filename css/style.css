@@ -44,7 +44,7 @@
  padding-right: 0px;*/
 }
 
-#loader {
+.loader {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -497,13 +497,7 @@ ul.service-list li i
     transition: all 0.3s;
     -webkit-transition: all 0.3s;
 }
-.bx-wrapper img {
-    width: 70px;
-    display: inline-block;
-    border-radius: 50%;
-    border: 5px solid #fff;
-    margin-bottom: 15px;
-}
+
 .service-item h3 span
 {
     opacity: 0.7;
@@ -536,9 +530,7 @@ ul.service-list li i
 {
     padding-right: 0px !important;
 }
-.bx-wrapper {
-    margin: 0 auto 35px;
-}
+
 .portfolio-item
 {
     position:relative;
@@ -614,6 +606,24 @@ ul.service-list li i
 
 /***********************************
 ************************************
+TITULO
+************************************
+***********************************/
+.titulo-new-page
+{
+    background-size: cover;
+    min-height: 120px;
+    margin-top: 90px;
+}
+
+.bg-titulo-new-page{
+    background-color: RGBA(73, 84, 105, 0.61);
+    min-height: 390px;
+    color: #fff;
+}
+
+/***********************************
+************************************
 TECNOLOGIA
 ************************************
 ***********************************/
@@ -674,13 +684,7 @@ TESTIMONIAL
     display: inline-block;
     width: 100%;
 }
-.bx-viewport
-{
-    height: 235px !important;
-    background-color: transparent !important;
-    border: 0px none !important;
-    box-shadow: none !important;
-}
+
 .testimonial-item ul li blockquote::before {
     content: '“';
     left: 30px;
@@ -1048,8 +1052,8 @@ Responsive media queries
 }
 
 .logo{
-     background: url('../img/logo.png') no-repeat;
-     width: 165px;
+     background: url('../img/logo2.png') repeat;
+     /*width: 165px;*/
 }
 
 .logo-dec
