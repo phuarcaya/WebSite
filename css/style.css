@@ -201,11 +201,16 @@ HEADER
     background-size: cover;
     min-height: 650px;
     position: relative;
+
+  /*  background: black url('../img/bg-banner02.jpg')!important;
+    -webkit-animation: backgroundScroll 20s linear infinite;
+    animation: backgroundScroll 20s linear infinite;
+    background-repeat: repeat-x!important;*/
 }
 .bg-color
 {
     /*background-color: rgba(0, 0, 0, 0.5);*/
-        background-color: rgba(13, 74, 123, 0.45);
+        background-color: rgba(0, 117, 143, 0.1);
     min-height: 650px;
 }
 #main-header
