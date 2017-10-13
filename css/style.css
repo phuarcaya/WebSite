@@ -780,13 +780,14 @@ contact
 ***********************************/
 #contact
 {
-    background: url('../img/bg.jpg') no-repeat;
-    background-size: cover;
+  background-color: #2C3340;
 }
 
 .bg-contcolor
 {
-    background-color: rgba(0, 0, 0, 0.5);
+    
+      background: url('../img/exis.png') repeat;
+    /*background-size: cover;*/
 }
 
 .btn-submit, .btn-submit:hover, .btn-submit:focus
