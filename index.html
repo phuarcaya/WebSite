@@ -9,13 +9,24 @@
 
   <link rel="shortcut icon" href="favicon.ico"> 
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-  <!-- <link rel="stylesheet" type="text/css" href="css/animate.css">  -->
+  <link rel="stylesheet" type="text/css" href="css/animate.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-dropdownhover.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <!-- <link rel="stylesheet" type="text/css" href="css/detail.css"> -->
   <!-- <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css">  -->
   <link rel="stylesheet" type="text/css" href="css/da-slider.css" />
+
+
   <script type="text/javascript" src="js/modernizr.custom.28468.js"></script>
   <script type="text/javascript" src="js/funciones.js"></script>
+  <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap-dropdownhover.min.js"></script>
+  <script src="js/jquery.easing.min.js"></script>
+  <script src="js/wow.js"></script>
+  <script src="js/jquery.bxslider.min.js"></script>
+  <script src="js/custom.js"></script>
+  <script type="text/javascript" src="js/jquery.cslider.js"></script>
 
 </head>
 <body>
@@ -79,6 +90,7 @@
             </div> -->
         </div>
     </div> 
+
     <nav class="navbar navbar-default navbar-fixed-top">
 
         <div class="container">
@@ -95,50 +107,50 @@
                     <span class="icon-bar">
                     </span>
                 </button> 
-                <!-- <a class="navbar-brand" href="#">
-                   OVATA
-                   <span class="logo-dec">Systems</span> 
-                </a> -->
-                <a class="navbar-brand" href="#">
-                  <img alt="OVATA" src="img/logo2.png" class="img-responsive">
+
+                <!-- <a class="navbar-brand" href="#">ZELEN<span class="logo-dec">TI</span></a> -->
+              <a class="navbar-brand" href="/">
+                  <span class="icon"><img src="img/favicon.png" alt="Logo"></span>
+                  <span><img src="img/logo2.png" alt="Logo"></span>
                 </a>
             </div>
 
-            <div class="collapse navbar-collapse" id="myNavbar">
-                
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="#main-header">INICIO</a></li>
-                    <li class="dropdown">
-                        <!-- <a href="#feature">SOLUCIONES</a> --> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                            SOLUCIONES
+            
+<div class="collapse navbar-collapse" id="myNavbar" data-hover="dropdown" data-animations="fadeInDown fadeInRight fadeInUp fadeInLeft">
+    <ul class="nav navbar-nav navbar-right">
+      <li class="active"><a href="#main-header">INICIO</a></li>
+      <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">SOLUCIONES <span class="caret"></span></a>
+      <ul class="dropdown-menu dropdownhover-bottom" role="menu">
+        <li><a href="soluciones/erp.html">ERP (ENTERPRISE RESOURCE PLANNING)</a></li>
+        <li><a href="#">SISTEMA DE RECURSOS HUMANOS</a></li>
+        <li role="separator" class="divider"></li>
+        <li><a href="#">SISTEMA DE PUNTO DE VENTA</a></li>
+        <li role="separator" class="divider"></li>
+        <li><a href="#">MONITOREO DE TIEMPOS Y CONSUMOS</a></li>
+        <li class="dropdown">
+        <a href="#">Another dropdown <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+        </ul>
+        </li>
+      </ul>
+      </li>
+      <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">SERVICIOS <span class="caret"></span></a>
+      <ul class="dropdown-menu dropdownhover-bottom" role="menu">
+        <li><a href="#service">DESARROLLO DE SOFTWARE</a></li>
+        <li><a href="#service">DESARROLLO MÓVIL</a></li>
+      </ul>
+      </li>
 
-                            <span class="caret">
-                            </span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="soluciones/erp.html">ERP (ENTERPRISE RESOURCE PLANNING)</a></li>
-                            <li><a href="#">SISTEMA DE RECURSOS HUMANOS</a></li>
-							<li role="separator" class="divider"></li>
-                            <li><a href="#">SISTEMA DE PUNTO DE VENTA</a></li>
-                            <li><a href="#">MONITOREO DE TIEMPOS Y CONSUMOS</a></li>                            
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <!-- <a href="#service">SERVICIOS</a> --> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                            SERVICIOS
+      <li><a href="#testimonial">COMPAÑÍA</a></li>
+      <li><a href="#contact">CONTÁCTENOS</a></li>
+    </ul>
+    </div>
 
-                            <span class="caret">
-                            </span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#service">DESARROLLO DE SOFTWARE</a></li>
-                            <li><a href="#service">DESARROLLO MÓVIL</a></li>
-                        </ul>
-                    </li>
-                    <li class=""><a href="#testimonial">COMPAÑÍA</a></li>
-                    <li class=""><a href="#contact">CONTÁCTENOS</a></li>
-                </ul>
-            </div>
+
         </div>
     </nav>
 </header>
@@ -192,37 +204,22 @@
     </div>
   </div>
 
-  <div class="line-group bg-info">
+  <div class="line-group bg-primary pad-bt15">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
+          <h3 class="text-white text-center">Para brindarle mayor información 
+            <a href="#contact" class="btn btn-default btn-destacado"><span class="text-primary">CONTÁCTENOS</span></a>
+          </h3>
 
-          <ul class="nav-pills nav-justified text-center">
+          <!-- <ul class="nav-pills nav-justified text-center">
             <li>
               <a href="soluciones/erp.html" class="text-white"> 
                 <img src="img/erp64.png" alt="erp" class="img-rounded">
                 <p>Sistema Integrado ERP</p>
               </a>
             </li>
-            <li>
-              <a href="#" class="text-white">
-                <img src="img/AppDev64.png" alt="erp" class="img-rounded">
-                <p>Planilla y Personal</p>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="text-white"> 
-                <img src="img/settings64.png" alt="erp" class="img-rounded">
-                <p>Desarrollo de Aplicaciones</p>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="text-white">
-                <img src="img/AppDev64.png" alt="erp" class="img-rounded">
-                <p>Desarrollo de Móvil</p>
-              </a>
-            </li>
-          </ul>
+          </ul> -->
         </div>
       </div>
     </div>
@@ -234,7 +231,7 @@
       <div class="row">
         <div class="col-md-12 text-center">
           <h2 class="service-title pad-bt15">SOLUCIONES</h2>
-          <p class="sub-title pad-bt15">Contamos con herramientas que ayudan a las empresas en gestionar sus principales procesos<br>optimizando tiempos de gestión del mismo.</p>
+          <p class="sub-title pad-bt15">ZelenTi, provee soluciones informáticos confiables, económicos y eficientes que permite a las organizaciones, gestionar y controlar de una mejor manera sus procesos y operaciones.</p>
           <hr class="bottom-line">
         </div>
         <div class="col-md-3 col-sm-6 col-xs-12">
@@ -243,9 +240,7 @@
              <a href="soluciones/erp.html"><img src="img/S05.png" alt="01" class="img-thumbnail" width="300px" height="280px"></a>
            </div>
            <h3 class="pad-bt15">ERP (Enterprise Resource Planning)</h3>
-           <p>
-			Es un grupo de sistemas de información que permite de una manera óptima y sencilla administración de las empresas.
-		   </p>
+           <p>Conjunto de sistemas de información que permite de una manera óptima y sencilla la administración de las operaciones de una empresa.</p>
            <a href="soluciones/erp.html" class="da-link">Más información →</a>
          </div>
        </div>
@@ -255,7 +250,7 @@
             <a href="soluciones/erp.html"><img src="img/S04.png" alt="01" class="img-thumbnail" width="300px" height="280px"></a>
           </div>
           <h3 class="pad-bt15">Sistema de Recursos Humanos</h3>
-          <p>Herramienta para gestionar planillas de personal en organizaciones de cualquier rubro.</p>
+          <p>Herramienta muy eficiente y fácil de usar que permite gestionar planillas de personal en organizaciones de cualquier tamaño y rubro.</p>
           <a data-toggle="collapse" data-parent="#solAccordion" href="#solSRH">Más información →</a>
         </div>
       </div>
@@ -265,7 +260,7 @@
             <a href="soluciones/erp.html"><img src="img/S06.png" alt="01" class="img-thumbnail" width="300px" height="280px"></a>
           </div>
           <h3 class="pad-bt15">Sistema de Punto de venta</h3>
-          <p>Ofrece un control de ventas, emisión de boletas, tickets ideal en supermercados, bodegas, farmacias.</p>
+          <p>Ofrece un control de ventas, emisión boletas y tickets. Ideal para supermercados, bodegas, farmacias, etc.</p>
           <!-- <a href="" class="da-link">Más información →</a> -->
           <a data-toggle="collapse" data-parent="#solAccordion" href="#solSPV">Más información →</a>
         </div>
@@ -277,7 +272,7 @@
             <a href="soluciones/erp.html"><img src="img/S03.png" alt="01" class="img-thumbnail" width="300px" height="280px"></a>
           </div>
           <h3 class="pad-bt15">Monitoreo de tiempos y consumos</h3>
-          <p>Es una herramienta ideal para controlar tiempos, inventarios y consumos.</p>
+          <p>Es una herramienta que permite controlar tiempos, consumos y stock de productos. Ideal para administrar salones de Billar.</p>
           <a data-toggle="collapse" data-parent="#solAccordion" href="#solMTC">Más información →</a>
         </div>
       </div>
@@ -364,31 +359,26 @@
 </div>
 </section>
 
-<section id="service" class="section-padding wow fadeInUp delay-05s">
+<section id="service" class="service section-padding wow fadeInUp delay-05s">
   <div class="container">
     <div class="row">
       <div class="col-md-12 text-center">
         <h2 class="service-title pad-bt15">SERVICIOS</h2>
-        <p class="sub-title pad-bt15">En Ovata Systems se especializa en software con las últimas tecnologías, desarrollamos soluciones para diferentes plataformas<br> utilizando las últimas tecnologias y las buenas practicas para el desarrollo de software</p>
+        <p class="sub-title pad-bt15">En ZelenTi, nos especializamos en crear Software a medida, utilizando las últimas tecnologías que existe en el mercado. Soluciones informáticas aplicando las buenas prácticas y metodologías para el desarrollo de Software.</p>
         <hr class="bottom-line">
       </div>
       <div class="col-md-6">
         <div class="media">
           <div class="media-left media-middle">
             <a href="#">
-              <img class="media-object" src="img/tsloginbillar.png" alt="2" width="200px" height="150px">
+              <img class="media-object" src="img/WebDev128.png" alt="2">
             </a>
           </div>
           <div class="media-body">
             <h4 class="media-heading">Desarrollo de Software</h4>
-            <p>DeSoft cuenta amplia experiencia brindando el servicio de Desarrollo de Software a medida.</p>
-            <a role="button" data-toggle="collapse" href="#serDesaSoft" aria-expanded="false" aria-controls="serDesaSoft">(+) Información...</a>
+            <p class="text-justify">Contamos con amplia experiencia brindando el servicio de Desarrollo de Software (Escritorio y Web) en diferentes plataformas y tecnologías (.Net, Php y Java).</p>
+            <a href="soluciones/erp.html" class="btn btn-xs btn-primary">Más información →</a>
           </div>
-        </div>
-
-        <div class="collapse" id="serDesaSoft">
-          <h4>Desarrollo de Software</h4>
-
         </div>
 
       </div>
@@ -397,25 +387,15 @@
         <div class="media">
           <div class="media-left media-middle">
             <a href="#">
-              <img class="media-object" src="img/psloginbillar2.png" alt="2" width="200px" height="150px">
+              <img class="media-object" src="img/AppDev128.png" alt="2">
             </a>
           </div>
           <div class="media-body">
             <h4 class="media-heading">Aplicaciones Móviles</h4>
-            <p>DeSoft cuenta amplia experiencia brindando el servicio de Desarrollo de Aplicaciones Móviles Android y IOS.</p>
-            <a role="button" data-toggle="collapse" href="#serApeMovil" aria-expanded="false" aria-controls="serApeMovil">(+) Información...</a>
+            <p class="text-justify">Contamos especialistas en crear Aplicaciones Móviles para diferentes plataformas, Android y iOS. Aplicaciones eficientes para satisfacer las expectativas de nuestros clientes.</p>
+            <a href="soluciones/erp.html" class="btn btn-xs btn-primary">Más información →</a>
           </div>
         </div>
-
-        <div class="collapse" id="serApeMovil">
-          <h4>Móvil Android</h4>
-          <ul>
-            <li>IOS</li>
-            <li>Android</li>
-          </ul>
-
-        </div>
-
       </div>
 
     <!--   <div class="col-md-3 col-sm-6 col-xs-12">
@@ -433,7 +413,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12 text-center">
-        <h2 class="service-title pad-bt15">Desarrollo a Medida</h2>
+        <h2 class="service-title pad-bt15">Soluciones a Medida</h2>
         <p class="sub-title pad-bt15">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>tempor incididunt ut labore et dolore magna aliqua.</p>
         <hr class="bottom-line">
       </div>
@@ -455,27 +435,35 @@
   </div>
 </section>
 
- <div class="line-group bg-danger text-white">
+ <div class="line-group bg-info">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
 
           <ul class="nav-pills nav-justified text-center">
             <li>
-              <a href="#"> <img src="img/erp64.png" alt="erp" class="img-rounded"></a>
-              <p>Sistema Integrado ERP</p>
+              <a href="#">
+                <img src="img/erp64.png" alt="erp" class="img-rounded">
+                <p class="text-white">Sistema Integrado ERP</p>
+              </a>
             </li>
             <li>
-              <a href="#"> <img src="img/staff64.png" alt="erp" class="img-rounded"></a>
-              <p>Planilla y Personal</p>
+              <a href="#">
+                <img src="img/staff64.png" alt="erp" class="img-rounded">
+                <p class="text-white">Planilla y Personal</p>
+              </a>
             </li>
             <li>
-              <a href="#"> <img src="img/settings64.png" alt="erp" class="img-rounded"></a>
-              <p>Desarrollo de Aplicaciones</p>
+              <a href="#">
+                <img src="img/settings64.png" alt="erp" class="img-rounded">
+                <p class="text-white">Desarrollo de Aplicaciones</p>
+              </a>
             </li>
             <li>
-              <a href="#"> <img src="img/AppDev64.png" alt="erp" class="img-rounded"></a>
-              <p>Desarrollo de Móvil</p>
+              <a href="#">
+                <img src="img/AppDev64.png" alt="erp" class="img-rounded">
+                <p class="text-white">Desarrollo de Móvil</p>
+              </a>
             </li>
           </ul>
         </div>
@@ -483,6 +471,43 @@
     </div>
   </div>
 
+<div class="line-group bg-default">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h2 class="pad-bt15 text-center">Tecnologías</h2>
+              <p class="sub-title pad-bt15 text-center">Utilizamos diversas tecnologías para desarrollar aplicaciones de escritorio, web y móvil.</p>
+
+              <ul class="nav-pills nav-justified text-center">
+                <li>
+                  <img src="img/vstudio.svg" alt="erp" class="img-rounded" width="100" height="60">
+                </li>
+                <li>
+                 <img src="img/php.svg" alt="erp" class="img-rounded" width="100" height="60">
+                </li>
+                <li>
+                  <img src="img/sqlserver.svg" alt="erp" class="img-rounded" width="60" height="60">
+                </li>
+                <li>
+                  <img src="img/oracle.svg" alt="erp" class="img-rounded" width="60" height="60">
+                </li>
+                <li>
+                  <img src="img/mysql.svg" alt="erp" class="img-rounded" width="60" height="60">
+                </li>
+                <li>
+                   <img src="img/html.svg" alt="erp" class="img-rounded" width="60" height="60">
+                </li>
+                <li>
+                 <img src="img/android.svg" alt="erp" class="img-rounded" width="60" height="60">
+                </li>
+                <li>
+                 <img src="img/ios.svg" alt="erp" class="img-rounded" width="60" height="60">
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
 
 <section id="tecnologia" class="wow fadeInUp delay-05s">
   <div class="bg-tecnologia">
@@ -610,28 +635,28 @@
   </div>
 </section>
 
-<section id="testimonial" class="wow fadeInUp delay-05s">
+<section id="testimonial" class="testimonial wow fadeInUp delay-05s">
   <div class="bg-testicolor">
     <div class="container section-padding">
       <div class="row">
 
         <div class="col-md-12 text-center">
-          <h2 class="service-title pad-bt15">Ovata Systems</h2>
-          <p class="sub-title pad-bt15">Ovata es una ...<br>tempor incididunt ut labore et dolore magna aliqua.</p>
+          <h2 class="service-title pad-bt15">¿Quienes Somos?</h2>
+          <p class="sub-title pad-bt15">ZelenTi, es una Consultora de Tecnología de Información que brinda soluciones tecnológicas y servicios en desarrollo de software y aplicaciones móviles. Utilizamos diferentes tecnologías para la creación y/o implementación de soluciones tales como; .Net, PHP, Java, Android y iOS.</p>
           <hr class="bottom-line">
         </div>
 
         <div class="col-lg-4 col-sm-4 text-center">
           <h2>Misión</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost.</p>
+          <p>Ser el mejor aliado de nuestros clientes, ayudando a mejorar sus operaciones y procesos para incrementar su valor, a través de nuestros productos y/o servicios.</p>
         </div>
         <div class="col-lg-4 col-sm-4 text-center">
           <h2>Visión</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost.</p>
+          <p>Ser una compañía de clase mundial. Mediante la creación y/o implantación de soluciones tecnológicas de alta calidad, para organizaciones de cualquier tamaño.</p>
         </div>
         <div class="col-lg-4 col-sm-4 text-center">
           <h2>Equipo</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost.</p>
+          <p>En ZelenTi contamos con especialistas altamente capacitados para atender los requerimientos específicos de nuestros clientes.</p>
         </div>
       </div>
     </div>
@@ -707,6 +732,7 @@
           </div>
         </div>
       </section>
+      
 
       <section id="contact" class="wow fadeInUp delay-05s">
         <div class="bg-contcolor">
@@ -772,26 +798,22 @@
 
             <div class="col-md-4">
                 <h4>SOLUCIONES</h4>
-
-                <p><a href="#">Software Integrado ERP</a></p>
-
-                <p><a href="#">Compras y Cuentas por Pagar</a></p>
-
-                <p><a href="#">Ventas y Cuentas por Cobrar</a></p> 
+                <p><a href="#"><span class="glyphicon glyphicon-ok"></span> Software Integrado ERP</a></p>
+                <p><a href="#"><span class="glyphicon glyphicon-ok"></span> Compras y Cuentas por Pagar</a></p>
+                <p><a href="#"><span class="glyphicon glyphicon-ok"></span> Ventas y Cuentas por Cobrar</a></p> 
             </div>
 
             <div class="col-md-4">
               <h4>SERVICIOS</h4>
-                <p><a href="#">Desarrollo de Software a Medida</a></p>
-                <p><a href="#">Aplicaciones Móviles Android y AOS</a></p>
+                <p><a href="#"><span class="glyphicon glyphicon-ok"></span> Desarrollo de Software a Medida</a></p>
+                <p><a href="#"><span class="glyphicon glyphicon-ok"></span> Aplicaciones Móviles Android y AOS</a></p>
             </div>
         </div>
 
         
         <div class="row">
-            <hr>
             <div class="col-md-6">
-              <div class="content-manager">
+              <!-- <div class="content-manager">
                     <nav>
                         <ul>
                             <li><a target="_blank" class="image-facebook" href="#"> Facebook </a></li>
@@ -800,7 +822,15 @@
                             <li><a target="_blank" class="image-googlem" href="#"> Google + </a></li>
                         </ul>
                     </nav>
-                </div> 
+                </div> --> 
+                 <div class="social-media">
+                      <ul class="items-social">
+                          <li><a title="Facebook" class="image-facebook" href="#">Facebook</a></li>
+                          <li><a title="Twitter" class="image-twitter" href="#">Twitter</a></li>
+                          <li><a title="Linkedin" class="image-linkedin" href="#">Linkedin</a></li>
+                          <li><a title="Google +" class="image-googlem" href="#">Google+</a></li>
+                      </ul>
+                  </div>
             </div>
 
             <div class="col-md-6">
@@ -828,16 +858,6 @@
 
     </div>
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/wow.js"></script>
-    <script src="js/jquery.bxslider.min.js"></script>
-    <script src="js/custom.js"></script>
-    
-
-    <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
-    <script type="text/javascript" src="js/jquery.cslider.js"></script>
 
     <script type="text/javascript">
       $(function() {

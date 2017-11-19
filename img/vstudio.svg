@@ -1,0 +1,17 @@
+<svg width="25" height="13" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <filter id="svg_2_blur">
+   <feGaussianBlur stdDeviation="0"/>
+  </filter>
+ </defs>
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="3.805551" width="5.472214" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <path fill="#333333" stroke="null" id="B" d="m11.493592,0.762182l-5.794223,4.405893l-3.842642,-2.202946l-1.440991,0.367158l0,5.507366l1.440991,0.734315l3.842642,-2.202946l5.703921,4.405893l3.422353,-1.101473l0,-8.83455l-3.332051,-1.078709l0,-0.000001zm-9.636865,6.975997l0,-2.937262l2.401651,1.468631l-2.401651,1.468631zm9.606604,0.734315l-3.842642,-2.202946l3.842642,-2.202946l0,4.405893l0,-0.000001z"/>
+  <text stroke="null" transform="matrix(1,0,0,0.9859939107009552,0,0.04141503904051547) " xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="17" id="svg_1" y="24.00761" x="7.41282" fill-opacity="null" stroke-opacity="null" stroke-width="0" fill="#000000"/>
+  <text font-style="normal" font-weight="bold" filter="url(#svg_2_blur)" stroke="null" transform="matrix(1.4477516313339376,0,0,2.5447847842056572,-3.1120289633234353,-18.42269652630101) " xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="3" id="svg_2" y="10.742595" x="13.129696" stroke-opacity="null" stroke-width="0" fill="#333333">.Net</text>
+ </g>
+</svg>
