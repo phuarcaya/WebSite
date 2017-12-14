@@ -1378,6 +1378,12 @@ a.bg-primary:hover,
 a.bg-primary:focus {
   background-color: #286090;
 }
+
+.bg-dark {
+  color: #fff;
+  background-color: #003B4D;
+}
+
 .bg-success {
   background-color: #3A913F;
 }

@@ -134,6 +134,7 @@
 .social-media{
     right: 0px; 
     z-index: 100;
+    float: left;
 }
 
 .items-social{
@@ -237,6 +238,7 @@ HEADER
 .header-top-ul{
     padding: 0px;
     margin: 5px;
+    float: left;
 }
 
 .header-top-ul li{
@@ -390,6 +392,7 @@ features
     font-family: 'Fira Sans', sans-serif;
     font-size: 35px;
     /*text-transform: uppercase;*/
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.26);
 }
 .item-img
 {
@@ -423,7 +426,7 @@ features
 }
 .service
 {
-    background-color: #F3F4F8;
+    background-color: #F2F2F2;
 }
 ul.service-list li i
 {
@@ -1007,6 +1010,8 @@ Responsive media queries
  -ms-transition: all 0.5s linear;
  -o-transition: all 0.5s linear;
  transition: all 0.5s linear;
+ border: 1px solid #d4d4d4;
+padding: 10px;
 }
 
 .transition-obj:hover {
